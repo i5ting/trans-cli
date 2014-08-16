@@ -30,7 +30,7 @@ option_parser = OptionParser.new do |opts|
   #   # 这个部分就是使用这个Option后执行的代码
   #   options[:switch] = true
   # end
-  vendor_path =  Pathname.new(File.expand_path('../../vendor/', __FILE__)).realpath.to_s  
+  vendor_path =  Pathname.new(File.expand_path('../../template/', __FILE__)).realpath.to_s  
 
   src_p = Dir.pwd
 	

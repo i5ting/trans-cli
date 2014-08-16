@@ -9,7 +9,7 @@ class Tocmd::TranslatorTrans
     #gem跟目录                          
     @gem_root_path = File.expand_path('../', @source_file_path)   
     #editor path
-    @editor_path =  Pathname.new(File.expand_path('../../../vendor', __FILE__)).realpath.to_s  
+    @editor_path =  Pathname.new(File.expand_path('../../../template', __FILE__)).realpath.to_s  
 
   end
   
