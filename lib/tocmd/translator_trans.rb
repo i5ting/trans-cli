@@ -260,45 +260,8 @@ class Tocmd::TranslatorTrans
     				type : 'cover'
     			} );
           
-			 
-
-					// <li id='todo'><a class="icon icon-shop" href="#">todo</a></li>
-// 					<li id='review'><a class="icon icon-cloud" href="#">review</a></li>
-// 					<li id='ok'><a class="icon icon-diamond" href="#">ok</a></li>
-// 					<li id='zh'><a class="icon icon-photo" href="#">中文</a></li>
-// 					<li id='en'><a class="icon icon-wallet" href="#">英文</a></li>
-//<li id='all'><a class="icon icon-shop" href="#">show all</a></li>
-					$.transtool({
-							toolbarselector:"#mp-menu",
-							default_state:'all',
-	            states:[
-	                {
-											'all':{
-                        'icon':'icon-shop',
-												'display':"全部",
-                        click:function(){
-                            alert('zh111');
-                        }
-											},
-	                    'zh':{
-	                        'icon':'icon-world',
-													'display':"中文",
-	                        click:function(){
-	                            alert('zh111');
-	                        }
-	                    },
-	                    'en':{
-	                        'icon':'icon-cloud',
-													'display':"英文",
-	                        click:function(){
-	                            alert('en');
-	                        }
-	                    }
-	                }
-	            ]
-					});
-					
-					// $('#tree').hide()
+					var transtool_opts_conf = eval(transtool_opts);
+					$.transtool(transtool_opts_conf);
 				
 			});
 			//-->
