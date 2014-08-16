@@ -1,6 +1,6 @@
-# Tocmd is a ruby gem
+# Trans is a ruby gem
 
-tocmd 是一个ruby gem，用于把markdown文件生成带有toc目录的html文档。
+trans 是一个ruby gem，用于把markdown文件生成带有toc目录的html文档。
 
 `说明：目前代码比较乱，没有重构.....`
 
@@ -17,77 +17,27 @@ tocmd 是一个ruby gem，用于把markdown文件生成带有toc目录的html文
 
 ## 安装方法
 
-	gem intall tocmd
+	gem intall trans
 	
 ## 命令概览
 
-- tocmd 
+- trans 
 
 		把用到的资源文件放到gem目录下，没有放到preview目录下使用方便，但是当你本地，可以节省空间，避免多次copy
-
-- tocmd_local
-
-		把用到的资源文件放到preview目录下
-	
-- tocmd_conf
-
-		和tocmd_local是一样的，都是把js等资源文件放到当前目录下，差别在于读取toc_conf.js文件作为配置，这样利于多次编译markdown的时候一次配置。
-
+ 
 ## 用法
 
 目前3个命令，参数都一样，分别如下
 
-### tocmd
+### trans
 
 指定单个文件
 
-	tocmd -f shiti.md
+	trans -f shiti.md
 	
 指定目录
 
-	tocmd -d .
-	
-### tocmd_local
-	
-
-指定单个文件
-
-	tocmd_local -f shiti.md
-	
-指定目录
-
-	tocmd_local -d .
-	
-### tocmd_conf
-
-和tocmd_local是一样的，都是把js等资源文件放到当前目录下，差别在于读取toc_conf.js文件作为配置，
-这样利于多次编译markdown的时候一次配置。
-
-示例配置项
-
-	var jquery_ztree_toc_opts = {
-		debug:false,
-		is_auto_number:false,
-		documment_selector:'.markdown-body',
-		ztreeStyle: {
-			width:'290px',
-			overflow: 'auto',
-			position: 'fixed',
-			'z-index': 2147483647,
-			border: '0px none',
-			left: '0px',
-			top: '0px',
-			'height': $(window).height() + 'px'
-		}
-	}
-	var markdown_panel_style = {
-		'width':'70%',
-		'margin-left':'20%'
-	};
-
-
-修改'height': $(window).height() + 'px'，这样就可以占满屏幕，支持tree的滑动
-	
+	trans -d .
 ### 自定义修改i5ting_ztree_toc配置项
 
 请自己按需修改，如有疑问，请到[i5ting_ztree_toc](https://github.com/i5ting/i5ting_ztree_toc)去提issue，我会尽力回复的
