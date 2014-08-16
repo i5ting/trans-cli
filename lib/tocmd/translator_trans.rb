@@ -29,7 +29,7 @@ class Tocmd::TranslatorTrans
 			puts "desc path = #{ar.join('/').to_s}"
       
       # copy vendor/toc to dest directory
-      `cp -rf #{@editor_path}/toc #{dest_dir}`
+      `cp -rf #{@editor_path}/ #{dest_dir}`
       
       # _toc_config(dest_dir)
       
@@ -165,25 +165,23 @@ class Tocmd::TranslatorTrans
 		css_link = ''
 		if destiny_dir.to_s.index('/')
 			css_link =  %Q{
-					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
-					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
-					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
-      		<link href="toc/css/bootstrap.icons.css" rel="stylesheet" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
+				<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+				<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+				<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+    		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
 			}
 		else
 			css_link =  %Q{
-					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
-					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
-					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
-      		<link href="toc/css/bootstrap.icons.css" rel="stylesheet" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
-      		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
+				<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+				<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+				<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+    		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
 			}
 		end
 	
@@ -193,95 +191,6 @@ class Tocmd::TranslatorTrans
 				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	        <title>#{ff.gsub('.md','')}</title>
 					#{css_link}
-				  <style>
-        
-
-          .settings-button {
-          	width: 36px;
-          	height: 28px;
-          	border-radius: 5px;
-          	border: 1px solid #161615;
-          	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
-          	opacity: 0.7;
-          	background-color: #343433;
-          	z-index: 2;
-          	display: block;
-          	margin: 20px 44px;
-            position:fixed;
-            bottom:0px;
-          }
-
-          .settings-button:hover, .pressed {
-          	background-color: transparent;
-          	opacity: 1;
-          	cursor: pointer;
-          	z-index: 2;
-          }
-
-          .settings-button img {
-          	margin: 5px auto 0px auto;
-          	display: block;
-          	z-index: -1;
-          }
-
-          .settings-button span {
-          	background: transparent url('../img/icon-cog-small.png') no-repeat top left;
-          	width: 19px;
-          	height: 18px;
-          	display: block;
-          	margin: 5px auto 0px auto;
-          }
-          
-          
-					pre {
-					    counter-reset: line-numbering;
-					    border: solid 1px #d9d9d9;
-					    border-radius: 0;
-					    background: #fff;
-					    padding: 0;
-					    line-height: 23px;
-					    margin-bottom: 30px;
-					    white-space: pre;
-					    overflow-x: auto;
-					    word-break: inherit;
-					    word-wrap: inherit;
-					}
-
-					pre a::before {
-					  content: counter(line-numbering);
-					  counter-increment: line-numbering;
-					  padding-right: 1em; /* space after numbers */
-					  width: 25px;
-					  text-align: right;
-					  opacity: 0.7;
-					  display: inline-block;
-					  color: #aaa;
-					  background: #eee;
-					  margin-right: 16px;
-					  padding: 2px 10px;
-					  font-size: 13px;
-					  -webkit-touch-callout: none;
-					  -webkit-user-select: none;
-					  -khtml-user-select: none;
-					  -moz-user-select: none;
-					  -ms-user-select: none;
-					  user-select: none;
-					}
-
-					pre a:first-of-type::before {
-					  padding-top: 10px;
-					}
-
-					pre a:last-of-type::before {
-					  padding-bottom: 10px;
-					}
-
-					pre a:only-of-type::before {
-					  padding: 10px;
-					}
-			
-					.highlight { background-color: #ffffcc } /* RIGHT */
-					</style>
 	      </head>
 	      <body>
     		<div class="container">
@@ -291,128 +200,8 @@ class Tocmd::TranslatorTrans
     				<!-- mp-menu -->
     				<nav id="mp-menu" class="mp-menu">
     					<div class="mp-level">
-    						<h2 class="icon icon-world">All Categories</h2>
+    						<h2 class="icon icon-world" style='font-size: 34;color:white;'>泰然译品</h2>
     						<ul>
-    							<li class="icon icon-arrow-left">
-    								<a class="icon icon-display" href="#">Devices</a>
-    								<div class="mp-level">
-    									<h2 class="icon icon-display">Devices</h2>
-    									<a class="mp-back" href="#">back</a>
-    									<ul>
-    										<li class="icon icon-arrow-left">
-    											<a class="icon icon-phone" href="#">Mobile Phones</a>
-    											<div class="mp-level">
-    												<h2>Mobile Phones</h2>
-    												<a class="mp-back" href="#">back</a>
-    												<ul>
-    													<li><a href="#">Super Smart Phone</a></li>
-    													<li><a href="#">Thin Magic Mobile</a></li>
-    													<li><a href="#">Performance Crusher</a></li>
-    													<li><a href="#">Futuristic Experience</a></li>
-    												</ul>
-    											</div>
-    										</li>
-    										<li class="icon icon-arrow-left">
-    											<a class="icon icon-tv" href="#">Televisions</a>
-    											<div class="mp-level">
-    												<h2>Televisions</h2>
-    												<a class="mp-back" href="#">back</a>
-    												<ul>
-    													<li><a href="#">Flat Superscreen</a></li>
-    													<li><a href="#">Gigantic LED</a></li>
-    													<li><a href="#">Power Eater</a></li>
-    													<li><a href="#">3D Experience</a></li>
-    													<li><a href="#">Classic Comfort</a></li>
-    												</ul>
-    											</div>
-    										</li>
-    										<li class="icon icon-arrow-left">
-    											<a class="icon icon-camera" href="#">Cameras</a>
-    											<div class="mp-level">
-    												<h2>Cameras</h2>
-    												<a class="mp-back" href="#">back</a>
-    												<ul>
-    													<li><a href="#">Smart Shot</a></li>
-    													<li><a href="#">Power Shooter</a></li>
-    													<li><a href="#">Easy Photo Maker</a></li>
-    													<li><a href="#">Super Pixel</a></li>
-    												</ul>
-    											</div>
-    										</li>
-    									</ul>
-    								</div>
-    							</li>
-    							<li class="icon icon-arrow-left">
-    								<a class="icon icon-news" href="#">Magazines</a>
-    								<div class="mp-level">
-    									<h2 class="icon icon-news">Magazines</h2>
-    									<a class="mp-back" href="#">back</a>
-    									<ul>
-    										<li><a href="#">National Geographic</a></li>
-    										<li><a href="#">Scientific American</a></li>
-    										<li><a href="#">The Spectator</a></li>
-    										<li><a href="#">The Rambler</a></li>
-    										<li><a href="#">Physics World</a></li>
-    										<li><a href="#">The New Scientist</a></li>
-    									</ul>
-    								</div>
-    							</li>
-    							<li class="icon icon-arrow-left">
-    								<a class="icon icon-shop" href="#">Store</a>
-    								<div class="mp-level">
-    									<h2 class="icon icon-shop">Store</h2>
-    									<a class="mp-back" href="#">back</a>
-    									<ul>
-    										<li class="icon icon-arrow-left">
-    											<a class="icon icon-t-shirt" href="#">Clothes</a>
-    											<div class="mp-level">
-    												<h2 class="icon icon-t-shirt">Clothes</h2>
-    												<a class="mp-back" href="#">back</a>
-    												<ul>
-    													<li class="icon icon-arrow-left">
-    														<a class="icon icon-female" href="#">Women's Clothing</a>
-    														<div class="mp-level">
-    															<h2 class="icon icon-female">Women's Clothing</h2>
-    															<a class="mp-back" href="#">back</a>
-    															<ul>
-    																<li><a href="#">Tops</a></li>
-    																<li><a href="#">Dresses</a></li>
-    																<li><a href="#">Trousers</a></li>
-    																<li><a href="#">Shoes</a></li>
-    																<li><a href="#">Sale</a></li>
-    															</ul>
-    														</div>
-    													</li>
-    													<li class="icon icon-arrow-left">
-    														<a class="icon icon-male" href="#">Men's Clothing</a>
-    														<div class="mp-level">
-    															<h2 class="icon icon-male">Men's Clothing</h2>
-    															<a class="mp-back" href="#">back</a>
-    															<ul>
-    																<li><a href="#">Shirts</a></li>
-    																<li><a href="#">Trousers</a></li>
-    																<li><a href="#">Shoes</a></li>
-    																<li><a href="#">Sale</a></li>
-    															</ul>
-    														</div>
-    													</li>
-    												</ul>
-    											</div>
-    										</li>
-    										<li>
-    											<a class="icon icon-diamond" href="#">Jewelry</a>
-    										</li>
-    										<li>
-    											<a class="icon icon-music" href="#">Music</a>
-    										</li>
-    										<li>
-    											<a class="icon icon-food" href="#">Grocery</a>
-    										</li>
-    									</ul>
-    								</div>
-    							</li>
-    							<li><a class="icon icon-photo" href="#">Collections</a></li>
-    							<li><a class="icon icon-wallet" href="#">Credits</a></li>
     						</ul>
 							
     					</div>
@@ -423,10 +212,6 @@ class Tocmd::TranslatorTrans
     					<div class="scroller-inner">
     						<!-- Top Navigation -->
 				
-						 
-    						<div class="content clearfix">
-    							<p><a href="#" id="trigger" class="menu-trigger">Open/Close Menu</a></p>
-    						</div>
       				  <div>
       							<div style='width:25%;'>
       									<ul id="tree" class="ztree" style='width:100%'>
@@ -456,12 +241,12 @@ class Tocmd::TranslatorTrans
 			<script type="text/javascript" src="toc/js/jquery.js"></script>
 			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
 			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
-      <script type="text/javascript" src="toc/js/jquery.transtool.min.js"></script>
       <script type="text/javascript" src="toc/toc_conf.js"></script>
   		<script src="toc/js/classie.js"></script>
   		<script src="toc/js/mlpushmenu.js"></script>
   		<script src="toc/js/modernizr.custom.js"></script>
-      
+      <script src="toc/js/jquery.transtool.js"></script>
+			
 			<SCRIPT type="text/javascript" >
 			<!--
 			$(document).ready(function(){
@@ -471,14 +256,54 @@ class Tocmd::TranslatorTrans
           var conf = eval(jquery_ztree_toc_opts);
   				$('#tree').ztree_toc(conf);
           
-    			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+    			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'normal-button' ), {
     				type : 'cover'
     			} );
           
+			 
+
+					// <li id='todo'><a class="icon icon-shop" href="#">todo</a></li>
+// 					<li id='review'><a class="icon icon-cloud" href="#">review</a></li>
+// 					<li id='ok'><a class="icon icon-diamond" href="#">ok</a></li>
+// 					<li id='zh'><a class="icon icon-photo" href="#">中文</a></li>
+// 					<li id='en'><a class="icon icon-wallet" href="#">英文</a></li>
+//<li id='all'><a class="icon icon-shop" href="#">show all</a></li>
+					$.transtool({
+							toolbarselector:"#mp-menu",
+							default_state:'todo',
+	            states:[
+	                {
+											'all':{
+                        'icon':'icon-shop',
+												'display':"全部",
+                        click:function(){
+                            alert('zh111');
+                        }
+											},
+	                    'todo':{
+	                        'icon':'icon-world',
+													'display':"中文",
+	                        click:function(){
+	                            alert('zh111');
+	                        }
+	                    },
+	                    'review':{
+	                        'icon':'icon-cloud',
+													'display':"英文",
+	                        click:function(){
+	                            alert('en');
+	                        }
+	                    }
+	                }
+	            ]
+					});
+					
+					// $('#tree').hide()
 				
 			});
 			//-->
 			</SCRIPT>
+	  
 	  }
 	
 		if destiny_dir.to_s.index('/') 
