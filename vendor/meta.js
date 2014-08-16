@@ -1,1 +1,1 @@
-/Users/shiren1118/Workspace/github/tocmd.gem/test_data/sample2.md
+/Users/shiren1118/Workspace/github/trans-cli/data/sample.md
