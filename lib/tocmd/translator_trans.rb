@@ -270,7 +270,7 @@ class Tocmd::TranslatorTrans
 //<li id='all'><a class="icon icon-shop" href="#">show all</a></li>
 					$.transtool({
 							toolbarselector:"#mp-menu",
-							default_state:'zh',
+							default_state:'all',
 	            states:[
 	                {
 											'all':{
