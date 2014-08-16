@@ -1,6 +1,6 @@
 # Trans is a ruby gem
 
-trans 是一个ruby gem，用于把markdown文件生成带有toc目录的html文档。
+trans 是一个ruby gem，用于把markdown文件生成带有toc目录的html文档。此gem可以用于翻译
 
 `说明：目前代码比较乱，没有重构.....`
 
@@ -79,19 +79,13 @@ $.fn.ztree_toc.defaults = {
 
 ## Test  in development mode
 
-	ruby -Ilib bin/tocmd -d test_data/dir
-	ruby -Ilib bin/tocmd -f test_data/sample.md
-	ruby -Ilib bin/tocmd_local -d test_data/dir
-	ruby -Ilib bin/tocmd_local -f test_data/sample.md
-	
-
-用于翻译
-
-	ruby -Ilib bin/trans -f sample2.md  
+	ruby -Ilib bin/trans -f data/sample.md  
 	
 ## History
 
 
+- 0.5.0
+	- rename it to trans gem
 - 0.4.1
 	- 不在生成toc_conf.js,而是直接使用toc/toc_conf.js
 - 0.4.0
