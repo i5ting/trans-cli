@@ -270,7 +270,7 @@ class Tocmd::TranslatorTrans
 //<li id='all'><a class="icon icon-shop" href="#">show all</a></li>
 					$.transtool({
 							toolbarselector:"#mp-menu",
-							default_state:'todo',
+							default_state:'zh',
 	            states:[
 	                {
 											'all':{
@@ -280,14 +280,14 @@ class Tocmd::TranslatorTrans
                             alert('zh111');
                         }
 											},
-	                    'todo':{
+	                    'zh':{
 	                        'icon':'icon-world',
 													'display':"中文",
 	                        click:function(){
 	                            alert('zh111');
 	                        }
 	                    },
-	                    'review':{
+	                    'en':{
 	                        'icon':'icon-cloud',
 													'display':"英文",
 	                        click:function(){
