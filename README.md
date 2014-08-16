@@ -4,7 +4,15 @@ trans 是一个ruby gem，用于把markdown文件生成带有toc目录的html文
 
 根据h1到h6标题生成toc内容大纲，采用的jquery插件[i5ting_ztree_toc](https://github.com/i5ting/i5ting_ztree_toc)。
 
+显示中文和英文
+
+![](doc/images/2.png)
+
+只显示英文
+
 ![](doc/images/1.png)
+
+
 
 ## Markdown生成步骤
 
