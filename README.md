@@ -33,13 +33,9 @@ trans 是一个ruby gem，用于把markdown文件生成带有toc目录的html文
  
 ## 用法
 
-目前1个命令，如下
-
-### trans
-
 指定单个文件
 
-	trans -f shiti.md
+	trans -f sample.md
 	
 指定目录
 
