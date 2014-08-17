@@ -172,7 +172,33 @@ trans是一个在markdown文件加css来翻译文档的工具，使用ruby写的
 	    ]
 	}
 	
+修改markdown文件中的css样式，主要是增加todo和review对应的样式，如下
+
+	<style>
+		.en {
+			display:block;
+			border: 1px solid lightblue;
+			padding:25px;
+		}
 	
+		.zh {
+			display:block;
+			border: 1px solid lightgreen;
+			padding:5px;
+		}
+	
+		.todo {
+			display:block;
+			border: 1px dashed red;
+			padding:15px;
+		}
+		
+		.review {
+			display:block;
+			border: 1px dashed red;
+			padding:15px;
+		}
+	</style>
 
 ## 高级feature
 
@@ -189,3 +215,42 @@ trans是一个在markdown文件加css来翻译文档的工具，使用ruby写的
 ### todo
 
 ### 嵌入可运行demo
+
+### 自定义修改i5ting_ztree_toc配置项
+
+请自己按需修改，如有疑问，请到[i5ting_ztree_toc](https://github.com/i5ting/i5ting_ztree_toc)去提issue，我会尽力回复的
+
+i5ting_ztree_toc的配置项如下：
+
+```
+//定义默认
+$.fn.ztree_toc.defaults = {
+	_zTree: null,
+	_headers: [],
+	_header_offsets: [],
+	_header_nodes: [{ id:1, pId:0, name:"Table of Content",open:true}],
+	debug: true,
+	highlight_offset: 0,
+	highlight_on_scroll: true,
+	/*
+	 * 计算滚动判断当前位置的时间，默认是50毫秒
+	 */
+	refresh_scroll_time: 50,
+	documment_selector: 'body',
+	is_posion_top: false,
+	/*
+	 * 默认是否显示header编号
+	 */
+	is_auto_number: false,
+	/*
+	 * 默认是否展开全部
+	 */	
+	is_expand_all: true,
+	/*
+	 * 是否对选中行，显示高亮效果
+	 */	
+	is_highlight_selected_line: true,
+	step: 100,
+	.....................
+};
+```
