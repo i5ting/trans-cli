@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = "http://ruby-china.org/topics/17028"
   gem.files         = FileList['lib/**/*.rb',
                         'bin/*',
-                        'vendor/**/**/**',
+                        'template/**/**/**',
                         'test/**/*'].to_a
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
