@@ -94,6 +94,10 @@ or
 ## History
 
 
+- 0.5.2
+	- 修正scroll事件绑定的位置问题
+- 0.5.1
+	- refact
 - 0.5.0
 	- rename it to trans gem
 - 0.4.1
