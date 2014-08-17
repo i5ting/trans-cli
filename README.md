@@ -94,6 +94,8 @@ or
 ## History
 
 
+- 0.5.3
+	- 必须把template放到git里，不然gem不包括
 - 0.5.2
 	- 修正scroll事件绑定的位置问题
 - 0.5.1
