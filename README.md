@@ -57,6 +57,8 @@ or
 ## History
 
 
+- 0.5.5
+	- if toc_conf file exst,not replace
 - 0.5.3
 	- 必须把template放到git里，不然gem不包括
 - 0.5.2
