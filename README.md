@@ -57,6 +57,9 @@ or
 ## History
 
 
+- 0.5.7
+	- menu不只是可以状态，还支持url
+	- example : 'zh':{'icon':'icon-edit','href':'http://baidu.com','target':'_blank','display':"中文"}
 - 0.5.6
 	- 'fix title update issue'
 - 0.5.5
