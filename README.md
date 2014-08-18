@@ -57,6 +57,8 @@ or
 ## History
 
 
+- 0.5.6
+	- 'fix title update issue'
 - 0.5.5
 	- if toc_conf file exst,not replace
 - 0.5.3

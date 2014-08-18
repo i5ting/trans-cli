@@ -200,7 +200,7 @@ class Tocmd::TranslatorTrans
 	    <html>
 	      <head>
 				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	        <title>#{ff.gsub('.md','')}</title>
+	        <title>泰然逸品#{ff.gsub('.md','')}</title>
 					#{css_link}
 	      </head>
 	      <body>
