@@ -29,8 +29,13 @@ class Tocmd::TranslatorTrans
 			puts "desc path = #{ar.join('/').to_s}"
       
       # copy vendor/toc to dest directory
-      `cp -rf #{@editor_path}/ #{dest_dir}`
-      `cp -rf #{@editor_path}/toc/toc_config.js #{dest_dir}`
+      `cp -rf #{@editor_path}/toc #{dest_dir}/toc`
+      
+      if File.exist?("#{dest_dir}/toc_conf.js")
+        puts 'toc_conf file exist'
+      else
+        `cp -rf #{@editor_path}/toc/toc_conf.js #{dest_dir}/`
+      end
       
       # _toc_config(dest_dir)
       
@@ -58,8 +63,12 @@ class Tocmd::TranslatorTrans
       
       # copy vendor/toc to dest directory
       `cp -rf #{@editor_path}/ #{dest_dir}`
-      `cp -rf #{@editor_path}/toc/toc_config.js #{dest_dir}`
-			
+      
+      if File.exist?("#{dest_dir}/toc_conf.js")
+        puts 'toc_conf file exist'
+      else
+        `cp -rf #{@editor_path}/toc/toc_conf.js #{dest_dir}/`
+      end
       # _toc_config(dest_dir)
       
 			build_with_dir(src_path ,dest_dir)
@@ -243,7 +252,7 @@ class Tocmd::TranslatorTrans
 			<script type="text/javascript" src="toc/js/jquery.js"></script>
 			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
 			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
-      <script type="text/javascript" src="toc_conf.js"></script>
+      <script type="text/javascript" src="./toc_conf.js"></script>
   		<script src="toc/js/classie.js"></script>
   		<script src="toc/js/mlpushmenu.js"></script>
   		<script src="toc/js/modernizr.custom.js"></script>
