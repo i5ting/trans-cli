@@ -200,7 +200,7 @@ class Tocmd::TranslatorTrans
     				<!-- mp-menu -->
     				<nav id="mp-menu" class="mp-menu">
     					<div class="mp-level">
-    						<h2 class="icon icon-world" style='font-size: 34;color:white;'>泰然译品</h2>
+    						<h2 class="icon icon-world" id='mp_title' style='font-size: 34;color:white;'>泰然译品</h2>
     						<ul>
     						</ul>
 							
