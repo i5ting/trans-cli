@@ -57,6 +57,8 @@ or
 ## History
 
 
+- 0.5.8
+	- 使用压缩后的js，并在tmpl里增加了gulp构建
 - 0.5.7
 	- menu不只是可以状态，还支持url
 	- example : 'zh':{'icon':'icon-edit','href':'http://baidu.com','target':'_blank','display':"中文"}
