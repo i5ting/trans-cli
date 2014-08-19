@@ -29,7 +29,8 @@ class Tocmd::TranslatorTrans
 			puts "desc path = #{ar.join('/').to_s}"
       
       # copy vendor/toc to dest directory
-      `cp -rf #{@editor_path}/toc #{dest_dir}/toc`
+      `mkdir -p #{dest_dir}/toc`
+      `cp -rf #{@editor_path}/toc #{dest_dir}/`
       
       if File.exist?("#{dest_dir}/toc_conf.js")
         puts 'toc_conf file exist'
