@@ -248,7 +248,7 @@ class Tocmd::TranslatorTrans
 			<script src="toc/lib/modernizr.custom.js"></script>
       
 			<script type="text/javascript" src="toc/js/trans.min.js"></script>
-      <script type="text/javascript" src="toc/toc_conf.js"></script>	  
+      <script type="text/javascript" src="toc_conf.js"></script>	  
 	  }
 	
 		if destiny_dir.to_s.index('/') 
