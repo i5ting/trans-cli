@@ -57,6 +57,8 @@ or
 ## History
 
 
+- 0.5.9
+	- css minify
 - 0.5.8
 	- 使用压缩后的js，并在tmpl里增加了gulp构建
 - 0.5.7
