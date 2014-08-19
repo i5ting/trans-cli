@@ -57,6 +57,8 @@ or
 ## History
 
 
+- 0.5.10
+	- put domready function to toc_conf.js
 - 0.5.9
 	- css minify
 - 0.5.8

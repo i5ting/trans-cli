@@ -248,28 +248,7 @@ class Tocmd::TranslatorTrans
 			<script src="toc/lib/modernizr.custom.js"></script>
       
 			<script type="text/javascript" src="toc/js/trans.min.js"></script>
-      <script type="text/javascript" src="toc/toc_conf.js"></script>
-      
-			
-			<SCRIPT type="text/javascript" >
-			<!--
-			$(document).ready(function(){
-          var css_conf = eval(markdown_panel_style);
-          $('#readme').css(css_conf)
-          
-          var conf = eval(jquery_ztree_toc_opts);
-  				$('#tree').ztree_toc(conf);
-          
-    			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'normal-button' ), {
-    				type : 'cover'
-    			} );
-          
-					var transtool_opts_conf = eval(transtool_opts);
-					$.transtool(transtool_opts_conf);
-			});
-			//-->
-			</SCRIPT>
-	  
+      <script type="text/javascript" src="toc/toc_conf.js"></script>	  
 	  }
 	
 		if destiny_dir.to_s.index('/') 
