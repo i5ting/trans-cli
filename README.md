@@ -57,9 +57,9 @@ or
 ## History
 
 
-- 0.5.10
+- [0.5.10 demo](http://no320cdn.b0.upaiyun.com/v0.5.10/sample.html#1)
 	- put domready function to toc_conf.js
-- 0.5.9
+- [0.5.9 demo](http://no320cdn.b0.upaiyun.com/v0.5.9/sample.html)
 	- css minify
 - 0.5.8
 	- 使用压缩后的js，并在tmpl里增加了gulp构建
