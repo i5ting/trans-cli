@@ -178,21 +178,13 @@ class Tocmd::TranslatorTrans
 			css_link =  %Q{
 				<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
 				<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
-				<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
-    		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
+    		<link rel="stylesheet" type="text/css" href="toc/css/trans.min.css" />
 			}
 		else
 			css_link =  %Q{
 				<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
 				<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
-				<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
-    		<link rel="stylesheet" type="text/css" href="toc/css/normalize.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/demo.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/icons.css" />
-    		<link rel="stylesheet" type="text/css" href="toc/css/component.css" />
+				<link rel="stylesheet" type="text/css" href="toc/css/trans.min.css" />
 			}
 		end
 	
@@ -253,6 +245,7 @@ class Tocmd::TranslatorTrans
 			<script src="toc/lib/jquery.js"></script>
 			<script src="toc/lib/jquery.ztree.all-3.5.min.js"></script>
 			<script src="toc/lib/modernizr.custom.js"></script>
+      
 			<script type="text/javascript" src="toc/js/trans.min.js"></script>
       <script type="text/javascript" src="toc/toc_conf.js"></script>
       
@@ -272,8 +265,6 @@ class Tocmd::TranslatorTrans
           
 					var transtool_opts_conf = eval(transtool_opts);
 					$.transtool(transtool_opts_conf);
-          
-				
 			});
 			//-->
 			</SCRIPT>
