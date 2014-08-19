@@ -249,14 +249,13 @@ class Tocmd::TranslatorTrans
           
 	      </body>
 	    </html>
-			<script type="text/javascript" src="toc/js/jquery.js"></script>
-			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
-			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
-      <script type="text/javascript" src="./toc_conf.js"></script>
-  		<script src="toc/js/classie.js"></script>
-  		<script src="toc/js/mlpushmenu.js"></script>
-  		<script src="toc/js/modernizr.custom.js"></script>
-      <script src="toc/js/jquery.transtool.js"></script>
+			
+			<script src="toc/lib/jquery.js"></script>
+			<script src="toc/lib/jquery.ztree.all-3.5.min.js"></script>
+			<script src="toc/lib/modernizr.custom.js"></script>
+			<script type="text/javascript" src="toc/js/trans.min.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
 			
 			<SCRIPT type="text/javascript" >
 			<!--
@@ -273,6 +272,7 @@ class Tocmd::TranslatorTrans
           
 					var transtool_opts_conf = eval(transtool_opts);
 					$.transtool(transtool_opts_conf);
+          
 				
 			});
 			//-->
