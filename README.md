@@ -57,6 +57,10 @@ or
 ## History
 
 
+- [0.5.11 demo](http://no320cdn.b0.upaiyun.com/v0.5.11/sample.html#1)
+	- fix demo icon issue
+	- fix toc_conf.js file path
+	- add features show 1: translate
 - [0.5.10 demo](http://no320cdn.b0.upaiyun.com/v0.5.10/sample.html#1)
 	- put domready function to toc_conf.js
 - [0.5.9 demo](http://no320cdn.b0.upaiyun.com/v0.5.9/sample.html)
