@@ -1,3 +1,10 @@
 data/preview/
 pkg
 
+demo/live/logs/*
+demo/live/.gitkeep
+demo/live/node_modules/
+demo/live/bower_components/
+demo/live/tmp
+demo/live/.DS_Store
+demo/live/.idea
