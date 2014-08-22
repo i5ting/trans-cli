@@ -56,7 +56,8 @@ or
 	
 ## History
 
-
+- 0.5.12
+	- fix url white color issue
 - [0.5.11 demo](http://no320cdn.b0.upaiyun.com/v0.5.11/sample.html#1)
 	- fix demo icon issue
 	- fix toc_conf.js file path
