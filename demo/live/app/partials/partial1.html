@@ -1,0 +1,18 @@
+<p>This is the partial for view 1.</p>
+
+<p>This is the partial for view 1.</p>
+
+<div class ="container">
+<div ng-repeat= "class in classes">
+{{class.Name}}
+<select ng-model="SelectdCollection[class.Name]" ng-options="option for option in class.Options" ></select>
+</div>
+<a class="btn btn-success" ng-click= "submit()">送出 </a>
+</div>
+
+
+
+<input type='text' name='json' value="{'fred':'fred'}">
+<input type='text' name='tel' value='0926xxx572'>
+
+<button ng-click='config()'>save</button>
