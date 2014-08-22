@@ -1,15 +1,22 @@
-<p>This is the partial for view 1.</p>
 
-<p>This is the partial for view 1.</p>
 
-<div class ="container">
+<!--<div class ="container">
 <div ng-repeat= "class in classes">
 {{class.Name}}
 <select ng-model="SelectdCollection[class.Name]" ng-options="option for option in class.Options" ></select>
 </div>
 <a class="btn btn-success" ng-click= "submit()">送出 </a>
-</div>
+</div> -->
 
+<hr>
+
+debug:<input type='text' name='json' ng-model="data.jquery_ztree_toc_opts.debug">
+
+<select ng-model="data.jquery_ztree_toc_opts.debug" ng-options="option for option in [true,false]" ></select>
+
+
+
+<hr>
 
 
 <input type='text' name='json' value="{'fred':'fred'}">

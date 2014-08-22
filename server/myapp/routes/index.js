@@ -34,14 +34,7 @@ router.post('/config', function(req, res){
 	console.log(req.url);	
  	var obj = req.body;
 	var static_dir = path.join(__dirname.replace('routes',''), 'public/json');
-	console.log('sss = ' + static_dir);
 
-	fs.readdir(static_dir,function(err, files){
-		if(err){
-			console.log(err);
-			fs.mkdir(static_dir);
-		}
-	});
 	
 	fs.writeFile(static_dir + '/config.json' ,JSON.stringify(req.body), function(err){
 	    console.log ('youxi!');

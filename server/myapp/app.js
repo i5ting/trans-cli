@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var cors = require('cors')
+var fs = require('fs');
 
 var app = express();
 var static_dir = path.join(__dirname, 'public');
@@ -60,5 +61,14 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 }); 
+
+var static_json_dir = path.join(__dirname.replace('routes',''), 'public/json');
+
+fs.readdir(static_json_dir,function(err, files){
+	if(err){
+		console.log(err);
+		fs.mkdir(static_json_dir);
+	}
+});
 
 module.exports = app;
