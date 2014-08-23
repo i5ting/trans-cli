@@ -1,25 +1,211 @@
 
+<div class="row">
+	<div class="large-3 medium-4 columns">
+	  <nav>
+	    <ul class="side-nav">
+	      <li class="heading">Setup</li>
 
-<!--<div class ="container">
-<div ng-repeat= "class in classes">
-{{class.Name}}
-<select ng-model="SelectdCollection[class.Name]" ng-options="option for option in class.Options" ></select>
+	      <li><a href="../index.html" data-search="">Getting Started</a></li>
+	      <li><a href="../css.html" data-search="Styles">CSS</a></li>
+	      <li><a href="../sass.html" data-search="Sass">Sass</a></li>
+	      <li><a href="../sass-files.html" data-search="Sass,Sass - What You Get, How to Use Sass">Sass Files</a></li>
+	      <li><a href="../using-sass.html" data-search="Sass,Sass - What You Get, How to Use Sass">Using Sass</a></li>
+	      <li><a href="../applications.html" data-search="Rails,Gem">Applications</a></li>
+	      <li><a href="../javascript.html" data-search="">JavaScript</a></li>
+	      <li><a href="global.html" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Global Styles</a></li>
+	      <li class="divider"></li>
+	      <li class="heading">Older Docs</li>
+	      <li><a href="/docs/v/4.3.2/" data-search="">Foundation 4</a></li>
+	      <li><a href="/docs/v/3.2.5/" data-search="">Foundation 3</a></li>
+	      <li><a href="/docs/v/2.2.1/" data-search="">Foundation 2</a></li>
+
+	    </ul>
+	  </nav>
+		
+	</div>
+
+	<div class="large-9 medium-8 columns">
+
+		
+			<form>
+			  <fieldset>
+			    <legend>Fieldset</legend>
+
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>Debug</label>
+			        <select ng-model="data.jquery_ztree_toc_opts.debug" ng-options="option for option in [true,false]" ></select>
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>scroll_selector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.scroll_selector">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>is_auto_number</label>
+			        <select ng-model="data.jquery_ztree_toc_opts.is_auto_number" ng-options="option for option in [true,false]" ></select>
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>highlight_on_scroll</label>
+			        <select ng-model="data.jquery_ztree_toc_opts.highlight_on_scroll" ng-options="option for option in [true,false]" ></select>
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>documment_selector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.documment_selector">
+			      </div>
+			    </div>
+					
+
+					<h2>ztreeStyle</h2>
+					
+			  
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>documment_selector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle.width">
+			      </div>
+			    </div>
+			    
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>overflow</label>
+			        <select ng-model="data.jquery_ztree_toc_opts.ztreeStyle.overflow" ng-options="option for option in ['auto','hidden']" ></select>
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>position</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle.position">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>z-index</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle['z-index']">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>border</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle.border">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>left</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle.left">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>top</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.jquery_ztree_toc_opts.ztreeStyle.top">
+			      </div>
+			    </div>
+					
+					
+					<h2>markdown_panel_style </h2>
+					
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>width</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.markdown_panel_style.width">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>margin-left</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.markdown_panel_style['margin-left']">
+			      </div>
+			    </div>
+					
+					<h2>transtool_opts</h2>
+	
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>toolbarselector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.transtool_opts.toolbarselector">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>mp_title</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.transtool_opts['mp_title']">
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>default_state</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.transtool_opts.default_state">
+			      </div>
+			    </div>
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>menu_container_selector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.transtool_opts['menu_container_selector']">
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <label>menu_trigger_selector</label>
+			        <input type="text" placeholder="large-12.columns" ng-model="data.transtool_opts.menu_trigger_selector">
+			      </div>
+			    </div>
+					
+					<hr>
+					
+					<div ng-repeat= "state in data.transtool_opts.states track by $index">
+				    <div ng-repeat= "(key, item)  in state ">
+
+								<h3>{{key}}</h3>
+
+					
+								  <div ng-repeat= "(k, v)  in item">
+								    <div class="row">
+								      <div class="large-12 columns">
+								        <label>{{$index}}/{{k}}/{{v}}</label>
+												<!-- {{$index}}/{{key}}/{{k}}/{{data.transtool_opts.states[$index][key][k]}} -->
+								        <input type="text" placeholder="large-12.columns" ng-model="state[key][k]">
+								      </div>
+								    </div>
+									</div>								
+
+				    </div>
+						
+					
+					</div>
+					
+					
+			    <div class="row">
+			      <div class="large-12 columns">
+			        <button ng-click='config()'>保存</button>
+			      </div>
+			    </div>
+					
+					
+					 
+
+			  </fieldset>
+			</form>
+	</div>
 </div>
-<a class="btn btn-success" ng-click= "submit()">送出 </a>
-</div> -->
-
-<hr>
-
-debug:<input type='text' name='json' ng-model="data.jquery_ztree_toc_opts.debug">
-
-<select ng-model="data.jquery_ztree_toc_opts.debug" ng-options="option for option in [true,false]" ></select>
-
-
-
-<hr>
-
-
-<input type='text' name='json' value="{'fred':'fred'}">
-<input type='text' name='tel' value='0926xxx572'>
-
-<button ng-click='config()'>save</button>
