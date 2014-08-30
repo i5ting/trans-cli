@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby  
 # encoding: utf-8
 
-require 'tocmd'  
+require 'trans'  
 require 'pathname'
 # p ARGV
 # puts Mdpreview.hi(ARGV)
@@ -61,6 +61,7 @@ option_parser = OptionParser.new do |opts|
   opts.on('-f sourceFileNAME', '--name sourceFileNAME', 'Pass-in source file name') do |value|
     # options[:fname] = value
    
+    puts "s-------"
     Tocmd.hi_trans_local(src_p + '/' + value)
   end
 	
