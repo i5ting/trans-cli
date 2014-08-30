@@ -62,7 +62,7 @@ option_parser = OptionParser.new do |opts|
     # options[:fname] = value
    
     puts "s-------"
-    Tocmd.hi_trans_local(src_p + '/' + value)
+    Trans.hi_trans_local(src_p + '/' + value)
   end
 	
   opts.on('-d dirNAME', '--name sourceFileNAME', 'Pass-in source file name') do |value|
@@ -70,9 +70,9 @@ option_parser = OptionParser.new do |opts|
 		p value
    
 		if value == '.'
-			Tocmd.hi_trans_dir_local(src_p + '/' )
+			Trans.hi_trans_dir_local(src_p + '/' )
 		else
-			Tocmd.hi_trans_dir_local(src_p + '/' + value)
+			Trans.hi_trans_dir_local(src_p + '/' + value)
 		end
     
   end
